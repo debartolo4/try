@@ -35,7 +35,7 @@ public class LoginGUI extends LoggingOut {
 	private static final long serialVersionUID = -510417858888515993L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The user field. */
 	private JTextField userField;
@@ -60,6 +60,7 @@ public class LoginGUI extends LoggingOut {
 	 * Create the frame of the user log in GUI.
 	 */
 	public LoginGUI() {
+		JPanel contentPane;
 		setIconImage(Toolkit.getDefaultToolkit().getImage(LoginGUI.class.getResource("/images/logo2.png")));
 		setTitle("Ghealth Login");
 		setResizable(false);

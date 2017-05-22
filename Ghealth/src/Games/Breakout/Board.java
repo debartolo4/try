@@ -15,6 +15,14 @@ import java.util.TimerTask;
 
 import javax.swing.JPanel;
 
+
+/**
+ * 
+ * Board definition for Breakout
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Board extends JPanel implements Commons {
 
     /**

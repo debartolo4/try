@@ -31,7 +31,7 @@ public class LabController {
 	private Patient pt;
 	
 	/** The Lab worker id. */
-	private String LabWorkerID;
+//	private String LabWorkerID;
 	
 	/** The obj list_str. */
 	private List<Object> objList_str;
@@ -58,6 +58,7 @@ public class LabController {
 	
 	public LabController(LabGUI lab,String labworker)
 	{
+		String LabWorkerID;
 		LabWorkerID = labworker;
 		labGUI = lab;
 		labGUI.findPatientActionListener(new findPatientListener());
@@ -175,20 +176,14 @@ public class LabController {
 		}
 
 		private void responseOptions(String extension, File unfiltered_picture, int response) {
-			if (response == JOptionPane.NO_OPTION)   
-			{
-				//return;	//return
-			} 
-			else if (response == JOptionPane.YES_OPTION) 
+			if (response == JOptionPane.YES_OPTION) 
 			{
 				lb.setFilePath(unfiltered_picture.toString());
 				lb.setFileExt(extension);
 				Controller.Control(lb,task.UPLOAD_FILE_TO_LAB_RECORD);
 				UploadFile=true;
 			} 
-			else if (response == JOptionPane.CLOSED_OPTION) {
-				//do something
-			}
+			
 		}
 	}
 	

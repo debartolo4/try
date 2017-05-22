@@ -147,26 +147,20 @@ public class PatientControl {
 			int response = JOptionPane.showConfirmDialog(null, "The Patient '"+findpt.getpID()+"' Patient NOT Exists! "
 					+ "\nWould you like to create new pation?","Confirm",
 			        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-			    if (response == JOptionPane.NO_OPTION)   {
-			    	//do something
-			    } 
-			    else if (response == JOptionPane.YES_OPTION) {
+			  
+			    if (response == JOptionPane.YES_OPTION) {
 					csGUI_findPatient.dispose();
 					PatientControl addpt_CL = new PatientControl(new CS_GUI_addPatient(),findpt.getpID());
 			    } 
-			    else if (response == JOptionPane.CLOSED_OPTION) {
-			    	//do something
-			    }
+			    
 		}
 
 		private void patientNotReg(Patient findpt, Envelope en) {
 			int response = JOptionPane.showConfirmDialog(null, "The Patient '"+findpt.getpID()+"' is canceled his account! "
 					+ "\nWould you like to restore?","Confirm",
 			        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-			    if (response == JOptionPane.NO_OPTION)   {
-			    	//do something
-			    } 
-			    else if (response == JOptionPane.YES_OPTION) {
+			    
+			    if (response == JOptionPane.YES_OPTION) {
 					
 					findpt = (Patient)en.getSingleObject();
 					csGUI_findPatient.dispose();
@@ -175,9 +169,7 @@ public class PatientControl {
 					
 					en = Controller.Control(findpt,task.RECOVER_PATIENT_REGISTRATION);
 			    } 
-			    else if (response == JOptionPane.CLOSED_OPTION) {
-			    	//do something
-			    }
+			   
 		}
 		
 	}

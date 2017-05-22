@@ -3,7 +3,13 @@ package Games.Snake;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
-
+/**
+ * 
+ * Defining the snake in snake game
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Snake extends JFrame {
 
     /**

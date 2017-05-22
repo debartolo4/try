@@ -15,6 +15,11 @@ import models.LabSettings;
 /*
  * TODO: modify class to match the FIT test - edit and add methods as required.
  */
+/**
+ * modify class to match the FIT test - edit and add methods as required.
+ * @author G5 lab group
+ *
+ */
 public class LabRecord extends ActionFixture {
 
 	public Patient pt;

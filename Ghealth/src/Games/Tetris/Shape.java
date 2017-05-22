@@ -3,7 +3,13 @@ package Games.Tetris;
 import java.util.Random;
 import java.lang.Math;
 
-
+/**
+ * 
+ * Defining all the possible shapes in Tetris game
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Shape {
 
     enum Tetrominoes { NoShape, ZShape, SShape, LineShape, 
@@ -11,7 +17,7 @@ public class Shape {
 
     private Tetrominoes pieceShape;
     private int coords[][];
-    private int[][][] coordsTable;
+//  private int[][][] coordsTable;
 
 
     public Shape() {
@@ -22,6 +28,8 @@ public class Shape {
     }
 
     public void setShape(Tetrominoes shape) {
+    	 
+    	 int[][][] coordsTable;
 
          coordsTable = new int[][][] {
             { { 0, 0 },   { 0, 0 },   { 0, 0 },   { 0, 0 } },

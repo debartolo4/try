@@ -4,6 +4,14 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
+
+/**
+ * 
+ * Initializing the game
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Breakout extends JFrame {
 
     /**

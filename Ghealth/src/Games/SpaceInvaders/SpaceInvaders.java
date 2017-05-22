@@ -2,7 +2,13 @@ package Games.SpaceInvaders;
 
 
 import javax.swing.JFrame;
-
+/**
+ * 
+ * Initializing the game
+ * 
+ * @author G5 lab group
+ *
+ */
 public class SpaceInvaders extends JFrame implements Commons {
 
     /**

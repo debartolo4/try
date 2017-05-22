@@ -27,7 +27,7 @@ public class Doctor_rec_GUI extends LoggingOut {
 	private static final long serialVersionUID = -5798215983453009657L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The text rec pane. */
 	private JTextPane textRecPane;
@@ -52,6 +52,7 @@ public class Doctor_rec_GUI extends LoggingOut {
 	 * Create the frame.
 	 */
 	public Doctor_rec_GUI() {
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorGUI.class.getResource("/images/logo2.PNG")));

@@ -24,7 +24,7 @@ public class CM_GUI extends LoggingOut {
 	private static final long serialVersionUID = -8152476922277860117L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The lblwarning message. */
 	private JLabel lblwarningMessage = null;
@@ -39,6 +39,7 @@ public class CM_GUI extends LoggingOut {
 	 * Create the frame.
 	 */
 	public CM_GUI() {
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorGUI.class.getResource("/images/logo2.PNG")));

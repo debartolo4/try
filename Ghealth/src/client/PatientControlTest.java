@@ -9,6 +9,14 @@ import junit.framework.TestCase;
 import models.Envelope;
 import models.Patient;
 
+/**
+ * 
+ * Testing PatientControl
+ * 
+ * @author Amir
+ *
+ */
+
 public class PatientControlTest extends TestCase {
 
 	public Patient exsitedPT ;

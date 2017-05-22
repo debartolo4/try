@@ -40,7 +40,7 @@ public class GM_GUI extends LoggingOut {
 	private static final long serialVersionUID = 1583234608338407492L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The lblwarning message. */
 	private JLabel lblwarningMessage = null;
@@ -67,25 +67,25 @@ public class GM_GUI extends LoggingOut {
 	private JDatePickerImpl datePickerTo;
 	
 	/** The cal_to. */
-	private Panel cal_to;
+//	private Panel cal_to;
 	
 	/** The btn choose date to. */
 	private JButton btnChooseDateTo;
 	
 	/** The lbl select date from. */
-	private JLabel lblSelectDateFrom;
+//	private JLabel lblSelectDateFrom;
 	
 	/** The lbl select date to. */
-	private JLabel lblSelectDateTo;
+//	private JLabel lblSelectDateTo;
 	
 	/** The separator. */
-	private JSeparator separator;
+//	private JSeparator separator;
 	
 	/** The separator_1. */
-	private JSeparator separator_1;
+//	private JSeparator separator_1;
 	
 	/** The separator_2. */
-	private JSeparator separator_2;
+//	private JSeparator separator_2;
 	
 	private JList<String> list;
 	
@@ -95,6 +95,14 @@ public class GM_GUI extends LoggingOut {
 	 * Create the frame.
 	 */
 	public GM_GUI() {
+		
+		JPanel contentPane;
+		Panel cal_to;
+		JLabel lblSelectDateFrom;
+		JLabel lblSelectDateTo;
+		JSeparator separator;
+		JSeparator separator_1;
+		JSeparator separator_2;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorGUI.class.getResource("/images/logo2.PNG")));

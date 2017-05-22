@@ -23,7 +23,7 @@ public class MainWindowGUI extends LoggingOut {
 	private static final long serialVersionUID = 8911802687405241262L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The btn home. */
 	private JButton btnHome;
@@ -41,7 +41,8 @@ public class MainWindowGUI extends LoggingOut {
 	 * @param user the user
 	 */
 	public MainWindowGUI(User user) {
-
+		
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(MainWindowGUI.class.getResource("/images/logo2.png")));

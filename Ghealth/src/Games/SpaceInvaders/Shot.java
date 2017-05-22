@@ -3,7 +3,13 @@ package Games.SpaceInvaders;
 
 import javax.swing.ImageIcon;
 
-
+/**
+ * 
+ * Defining the player shooting in Space Invaders
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Shot extends Sprite {
 
 //    private String shot = "shot.png";

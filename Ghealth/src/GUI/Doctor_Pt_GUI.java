@@ -25,7 +25,7 @@ public class Doctor_Pt_GUI extends LoggingOut {
 	private static final long serialVersionUID = 1645191120165568000L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The btn view history. */
 	private JButton btnViewHistory;
@@ -50,6 +50,7 @@ public class Doctor_Pt_GUI extends LoggingOut {
 	 * Create the frame.
 	 */
 	public Doctor_Pt_GUI() {
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorGUI.class.getResource("/images/logo2.PNG")));

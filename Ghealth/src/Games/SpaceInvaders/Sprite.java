@@ -2,6 +2,12 @@ package Games.SpaceInvaders;
 
 import java.awt.Image;
 
+
+/**
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Sprite {
 
         private boolean visible;

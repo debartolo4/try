@@ -14,6 +14,14 @@ import javax.swing.Timer;
 
 import Games.Tetris.Shape.Tetrominoes;
 
+
+/**
+ * 
+ * Creating the board in Tetris
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Board extends JPanel implements ActionListener {
 
 

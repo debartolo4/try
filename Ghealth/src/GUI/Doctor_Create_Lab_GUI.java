@@ -29,7 +29,7 @@ public class Doctor_Create_Lab_GUI extends LoggingOut {
 	
 	/** The content pane. */
 	
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The text rec pane. */
 	private JTextPane textRecPane;
@@ -54,6 +54,7 @@ public class Doctor_Create_Lab_GUI extends LoggingOut {
 	 * Create the frame.
 	 */
 	public Doctor_Create_Lab_GUI() {
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorGUI.class.getResource("/images/logo2.PNG")));

@@ -2,6 +2,13 @@ package Games.Breakout;
 
 import javax.swing.ImageIcon;
 
+/**
+ * 
+ * Ball definition for Breakout
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Ball extends Sprite implements Commons {
 
     private int xdir;

@@ -3,6 +3,13 @@ package Games.Breakout;
 import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 
+/**
+ * 
+ * Defining paddle in breakout
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Paddle extends Sprite implements Commons {
 
     private int dx;

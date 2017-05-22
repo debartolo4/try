@@ -2,7 +2,13 @@ package Games.SpaceInvaders;
 
 import javax.swing.ImageIcon;
 
-
+/**
+ * 
+ * Alien shooting interaction
+ * 
+ * @author Amir
+ *
+ */
 public class Alien extends Sprite {
 
     private Bomb bomb;
@@ -27,7 +33,13 @@ public class Alien extends Sprite {
     public Bomb getBomb() {
         return bomb;
     }
-
+/**
+ * 
+ * Bomb functions defined
+ * 
+ * @author Amir
+ *
+ */
     public class Bomb extends Sprite {
 
  //     private final String bomb = "bomb.png";
@@ -52,3 +64,4 @@ public class Alien extends Sprite {
         }
     }
 }
+

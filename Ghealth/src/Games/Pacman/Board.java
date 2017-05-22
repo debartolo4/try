@@ -19,6 +19,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+/**
+ * 
+ * Defining the board for pacman game
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Board extends JPanel implements ActionListener {
 
     /**

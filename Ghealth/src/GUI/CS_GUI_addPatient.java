@@ -33,7 +33,7 @@ public class CS_GUI_addPatient extends LoggingOut {
 	private static final long serialVersionUID = -4516583930581651307L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The btn cancel. */
 	private JButton btnCancel;
@@ -74,6 +74,7 @@ public class CS_GUI_addPatient extends LoggingOut {
 	 * Create the frame.
 	 */
 	public CS_GUI_addPatient() {
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorGUI.class.getResource("/images/logo2.PNG")));

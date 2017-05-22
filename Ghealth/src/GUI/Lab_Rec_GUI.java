@@ -30,7 +30,7 @@ public class Lab_Rec_GUI extends LoggingOut {
 	private static final long serialVersionUID = -5798215983453009657L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The text rec pane. */
 	private JTextPane textRecPane;
@@ -61,7 +61,8 @@ public class Lab_Rec_GUI extends LoggingOut {
 	 */
 	public Lab_Rec_GUI(LabSettings lb) 
 	{
-
+		
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorGUI.class.getResource("/images/logo2.PNG")));

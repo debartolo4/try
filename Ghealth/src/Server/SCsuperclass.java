@@ -1,14 +1,20 @@
 package Server;
 
+/**
+ * 
+ * 
+ * 
+ * @author G5 lab group
+ *
+ */
 public class SCsuperclass {
-
 	/**
 	* Gets the month name.
 	*
 	* @param month_num the month_num
 	* @return the month name
 	*/
-	protected String getMonthName(int month_num){
+	String getMonthName(int month_num){
 
 	String months[] = {"January","February","March","April","May","June","July","August","September","October","November","December","no_month"};
 
@@ -16,5 +22,4 @@ public class SCsuperclass {
 
 	return months[month_num-1];
 	}
-	
 }

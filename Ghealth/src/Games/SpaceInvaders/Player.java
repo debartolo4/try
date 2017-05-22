@@ -4,7 +4,13 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.ImageIcon;
 
-
+/**
+ * 
+ * Defining player in Space Invaders
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Player extends Sprite implements Commons{
 
 //  private final int START_Y = 280; 

@@ -14,7 +14,13 @@ import fit.ActionFixture;
 import GUI.CS_GUI_newAppoint;
 import client.*;
 
-
+/**
+ * 
+ * Appointment controller
+ * 
+ * @author G5 lab group
+ *
+ */
 public class AppointmentController extends ActionFixture {
 
 	

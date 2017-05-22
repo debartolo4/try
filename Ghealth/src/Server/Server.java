@@ -2,6 +2,7 @@ package Server;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -66,7 +67,7 @@ public class Server extends Thread
     public Clinic clinic = null;
 	
 	/** The nt. */
-	private Notification nt;
+//	private Notification nt;
     
     
     
@@ -217,6 +218,7 @@ public class Server extends Thread
 
 
 	private void serverL(Envelope env) {
+		Notification nt;
 		if(env.getType() == task.SEND_PERSONAL_DOC_MAIL) {
 			/* Sending the patient's personal doctor mail with app details. */
 			nt = (Notification)env.getSingleObject();
@@ -501,24 +503,38 @@ public class Server extends Thread
      * @param s the s
      * @throws IOException Signals that an I/O exception has occurred.
      */
-    public void sendFile(String flname,Socket s) throws IOException {
-		DataOutputStream dos = new DataOutputStream(s.getOutputStream());
-		
-		String extension;
-		extension=flname;
-	    int index=extension.indexOf(".");
-	    //get the extension of the file
-	    extension=extension.substring(index+1, extension.length());
-		
-		FileInputStream fis = new FileInputStream(flname);
-		byte[] buffer = new byte[4096];
-		
-		while (fis.read(buffer) > 0) {
-			dos.write(buffer);
+    public void sendFile(String flname,Socket s) {
+		DataOutputStream dos = null;
+		FileInputStream fis = null;
+		try {
+			fis = new FileInputStream(flname);
+			dos = new DataOutputStream(s.getOutputStream());
+			String extension;
+			extension=flname;
+		    int index=extension.indexOf(".");
+		    extension=extension.substring(index+1, extension.length());
+
+			byte[] buffer = new byte[4096];
+			
+			while (fis.read(buffer) > 0) {
+				dos.write(buffer);
+			}
+		} catch (FileNotFoundException e1) {
+			JOptionPane.showMessageDialog(null,e1.getMessage());
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(null,e.getMessage());
+		} finally {
+			if(fis != null) {
+				try {
+					dos.close();
+					fis.close();
+				}
+				catch(IOException e) {
+					JOptionPane.showMessageDialog(null,e.getMessage());
+				}	
+			}		
 		}
-		
-		fis.close();
-		dos.close();	
+	
 	}
     
     
@@ -529,22 +545,37 @@ public class Server extends Thread
      * @param clientSock the client sock
      * @throws IOException Signals that an I/O exception has occurred.
      */
-    private void saveFile(String flname,Socket clientSock) throws IOException {
-		DataInputStream dis = new DataInputStream(clientSock.getInputStream());
-		FileOutputStream fos = new FileOutputStream(flname);
-		byte[] buffer = new byte[16*1024]; // 16 kb
-		
-		int filesize = 2097152; // 2mb files - Send file size in separate msg
-		int read = 0;
-		int remaining = filesize;
-		while((read = dis.read(buffer, 0, Math.min(buffer.length, remaining))) > 0) {
-			remaining -= read;
-			fos.write(buffer, 0, read);
+    private void saveFile(String flname,Socket clientSock) {
+		DataInputStream dis = null;
+		FileOutputStream fos = null;
+		try {
+			fos = new FileOutputStream(flname);
+			dis = new DataInputStream(clientSock.getInputStream());
+			byte[] buffer = new byte[16*1024]; 
+			
+			int filesize = 2097152; 
+			int read = 0;
+			int remaining = filesize;
+			while((read = dis.read(buffer, 0, Math.min(buffer.length, remaining))) > 0) {
+				remaining -= read;
+				fos.write(buffer, 0, read);
+			}
+		} catch (FileNotFoundException e1) {
+			JOptionPane.showMessageDialog(null,e1.getMessage());
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(null,e.getMessage());
+		} finally {
+			if(fos != null) {
+				try {
+					fos.close();
+					dis.close();
+				}
+				catch(IOException e) {
+					JOptionPane.showMessageDialog(null,e.getMessage());
+				}
+			}
 		}
 		
-		fos.close();
-		dis.close();
 	}
     
-   
 }

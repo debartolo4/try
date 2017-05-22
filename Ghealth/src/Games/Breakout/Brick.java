@@ -2,6 +2,14 @@ package Games.Breakout;
 
 import javax.swing.ImageIcon;
 
+
+/**
+ * 
+ * Defining bricks in breakout
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Brick extends Sprite {
 
     private boolean destroyed;

@@ -5,7 +5,13 @@ import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-
+/**
+ * 
+ * Initializing the game Tetris
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Tetris extends JFrame {
 
     /**

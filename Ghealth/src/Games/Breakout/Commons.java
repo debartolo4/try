@@ -1,5 +1,12 @@
 package Games.Breakout;
 
+/**
+ * 
+ * public interface for common variables in package
+ * 
+ * @author G5 lab group
+ *
+ */
 public interface Commons {
     
     public static final int WIDTH = 300;

@@ -16,7 +16,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-
+/**
+ * 
+ * defining the board for spaceinvaders
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Board extends JPanel implements Runnable, Commons { 
 
     /**

@@ -3,6 +3,13 @@ package Games.Breakout;
 import java.awt.Image;
 import java.awt.Rectangle;
 
+/**
+ * 
+ * 
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Sprite {
 
     protected int x;

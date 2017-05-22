@@ -6,6 +6,12 @@ import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
 
+/**
+ * 
+ * 
+ * @author G5 lab group
+ *
+ */
 public class SCsuperclassA {
 
 	/**

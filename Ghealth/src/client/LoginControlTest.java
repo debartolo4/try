@@ -10,6 +10,13 @@ import junit.framework.TestCase;
 import models.Envelope;
 import models.User;
 
+/**
+ * 
+ * Testing LoginControl
+ * 
+ * @author Amir
+ *
+ */
 public class LoginControlTest extends TestCase {
 
 	

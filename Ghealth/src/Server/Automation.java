@@ -34,7 +34,7 @@ public class Automation extends TimerTask{
 	private Timer timer = new Timer();
 	
 	/** The timer2. */
-	private Timer timer2 = new Timer();
+//	private Timer timer2 = new Timer();
 	
 	/** The not lst. */
 	//public static Email mail= new Email();
@@ -68,6 +68,7 @@ public class Automation extends TimerTask{
 	 * @see java.util.TimerTask#run()
 	 */
 	public void run(){
+		Timer timer2 = new Timer();
 		SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		try {
 			/** 

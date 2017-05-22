@@ -37,7 +37,7 @@ public class Doctor_History_GUI extends LoggingOut {
 	private static final long serialVersionUID = 4721311421959450478L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The btn cancel. */
 	private JButton btnCancel;
@@ -71,6 +71,7 @@ public class Doctor_History_GUI extends LoggingOut {
 	 * Create the frame.
 	 */
 	public Doctor_History_GUI() {
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorGUI.class.getResource("/images/logo2.PNG")));

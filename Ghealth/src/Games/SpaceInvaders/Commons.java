@@ -1,6 +1,12 @@
 package Games.SpaceInvaders;
 
-
+/**
+ * 
+ * Common variables in the package
+ * 
+ * @author G5 lab group
+ *
+ */
 public interface Commons {
 
     public static final int BOARD_WIDTH = 358;

@@ -16,7 +16,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-
+/**
+ * 
+ * Initializing board for snake
+ * 
+ * @author G5 lab group
+ *
+ */
 public class Board extends JPanel implements ActionListener {
 
     /**

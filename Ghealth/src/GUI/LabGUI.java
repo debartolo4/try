@@ -29,7 +29,7 @@ public class LabGUI extends LoggingOut {
 	private static final long serialVersionUID = -3233126342207430542L;
 	
 	/** The content pane. */
-	private JPanel contentPane;
+//	private JPanel contentPane;
 	
 	/** The btn cancel. */
 	private JButton btnCancel;
@@ -53,6 +53,7 @@ public class LabGUI extends LoggingOut {
 	 * Create the frame.
 	 */
 	public LabGUI() {
+		JPanel contentPane;
 		setResizable(false);
 		setTitle("G-Health");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(LabGUI.class.getResource("/images/logo2.PNG")));

@@ -18,10 +18,10 @@ public class GhealthClientGUI extends LoggingOut{
 	
 	
 	/** The Label port. */
-	private JLabel LabelPort = null;
+//	private JLabel LabelPort = null;
 	
 	/** The Label host. */
-	private JLabel LabelHost = null;
+//	private JLabel LabelHost = null;
 	
 	/** The Text host. */
 	private JTextField TextHost = null;
@@ -39,6 +39,9 @@ public class GhealthClientGUI extends LoggingOut{
 	 * Instantiates a new ghealth client gui.
 	 */
 	public GhealthClientGUI() {
+		
+		JLabel LabelPort = null;
+		JLabel LabelHost = null;
 		getContentPane().setLayout(null);
 		
 		LabelPort = new JLabel("Port");
